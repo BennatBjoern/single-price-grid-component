@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish--blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 50rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.community-box,
+.subscription-box,
+.about-box {
+  padding: 4rem;
+}
+
+.subscription-subheading,
+.about-subheading {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+.community-box {
+  background-color: #fff;
+  grid-column: 1 / -1;
+}
+
+.community-heading {
+  color: var(--cyan);
+  margin-bottom: 2rem;
+}
+
+.community-subheading {
+  color: var(--bright-yellow);
+  margin-bottom: 1rem;
+}
+
+.community-text {
+  color: var(--grayish--blue);
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.subscription-box {
+  background-color: var(--cyan);
+  padding-bottom: 3rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.subscription-price {
+  font-size: 2.6rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.price span {
+  color: var(--light-gray);
+  font-size: 1.2rem;
+}
+
+.subscription-text {
+  font-size: 1.2rem;
+  color: var(--light-gray);
+  margin-bottom: 2.6rem;
+}
+
+.btn {
+  border: none;
+  background-color: var(--bright-yellow);
+  width: 100%;
+  padding: 1.4rem;
+  border-radius: 5px;
+  color: #fff;
+  box-shadow: 10px 0 20px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.about-box {
+  background-color: #4abebd;
+  padding-right: 6rem;
+  padding-bottom: 3rem;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--light-gray);
+}
+
+@media (max-width: 24em) {
+  .container {
+    max-width: 80%;
+  }
+
+  .community-box,
+  .subscription-box,
+  .about-box {
+    padding: 2rem;
+    grid-column: 1 / -1;
+  }
+}
