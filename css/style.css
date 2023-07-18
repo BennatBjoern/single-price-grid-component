@@ -109,6 +109,10 @@ body {
   cursor: pointer;
 }
 
+.btn:hover {
+  background-color: #869c24;
+}
+
 .about-box {
   background-color: #4abebd;
   padding-right: 6rem;
