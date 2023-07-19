@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontendmentor](https://www.frontendmentor.io/solutions/single-price-grid-component-using-flexbox-and-grid-tHVbxl6Mft)
-- Live Site URL: [Github Ppges](https://bennatbjoern.github.io/single-price-grid-component/)
+- Live Site URL: [Github Pages](https://bennatbjoern.github.io/single-price-grid-component/)
 
 ## My process
 
